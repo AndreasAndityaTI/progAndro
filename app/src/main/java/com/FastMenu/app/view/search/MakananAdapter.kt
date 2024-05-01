@@ -9,13 +9,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.FastMenu.app.data.response.MakananItem
 import com.FastMenu.app.view.detail.DetailMakananActivity
-import com.FastMenu.app.databinding.ItemTopengBinding
+import com.FastMenu.app.databinding.ItemMakananBinding
+
 
 
 class MakananAdapter : ListAdapter<MakananItem, MakananAdapter.MyViewHolder>(DIFF_CALLBACK) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        val binding = ItemTopengBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = ItemMakananBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return MyViewHolder(binding)
     }
 
@@ -25,16 +26,16 @@ class MakananAdapter : ListAdapter<MakananItem, MakananAdapter.MyViewHolder>(DIF
 
         holder.itemView.setOnClickListener {
             val intentDetail = Intent(holder.itemView.context, DetailMakananActivity::class.java)
-            intentDetail.putExtra(DetailMakananActivity.EXTRA_ID, user.id.toString())
+            intentDetail.putExtra(DetailMakananActivity.EXTRA_ID, user.toString())
             holder.itemView.context.startActivity(intentDetail)
         }
     }
 
-    class MyViewHolder(private val binding: ItemTopengBinding) : RecyclerView.ViewHolder(binding.root){
+    class MyViewHolder(private val binding: ItemMakananBinding) : RecyclerView.ViewHolder(binding.root){
         fun bind(user: MakananItem) {
-            binding.tvNamaTopeng.text = user.name
+            binding.tvNamaMakanan.text = user.name
             Glide.with(binding.root).load(user.imageUrl).into(binding.ivItemPhoto)
-            binding.tvDeskripsiTopeng.text = user.informasi
+            binding.tvDeskripsiMakanan.text = user.informasi
         }
     }
 

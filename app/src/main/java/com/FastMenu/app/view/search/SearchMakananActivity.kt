@@ -9,14 +9,14 @@ import com.FastMenu.app.data.remote.ApiConfig
 import com.FastMenu.app.data.repository.MakananRepository
 import com.FastMenu.app.data.response.MakananItem
 import com.FastMenu.app.view.SearchMakananViewModelFactory
-import com.FastMenu.app.databinding.ActivitySearchTopengBinding
+import com.FastMenu.app.databinding.ActivitySearchMakananBinding
 
 class SearchMakananActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivitySearchTopengBinding
+    private lateinit var binding: ActivitySearchMakananBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivitySearchTopengBinding.inflate(layoutInflater)
+        binding = ActivitySearchMakananBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val apiService = ApiConfig.getApiService()
@@ -33,7 +33,7 @@ class SearchMakananActivity : AppCompatActivity() {
         }
 
         viewModel.listMakanan.observe(this) { listMakanan ->
-            setTopengData(listMakanan)
+            setMakananData(listMakanan)
         }
 
         viewModel.isLoading.observe(this) {
@@ -41,7 +41,7 @@ class SearchMakananActivity : AppCompatActivity() {
         }
     }
 
-    private fun setTopengData(data: List<MakananItem>) {
+    private fun setMakananData(data: List<MakananItem>) {
         val adapter = MakananAdapter()
         adapter.submitList(data)
         binding.rvMakanan.adapter = adapter

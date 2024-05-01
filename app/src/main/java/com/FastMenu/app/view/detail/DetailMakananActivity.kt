@@ -10,14 +10,14 @@ import com.FastMenu.app.data.remote.ApiConfig
 import com.FastMenu.app.data.repository.MakananRepository
 import com.FastMenu.app.data.response.DetailMakananResponse
 import com.FastMenu.app.view.SearchMakananViewModelFactory
-import com.FastMenu.app.databinding.ActivityDetailTopengBinding
+import com.FastMenu.app.databinding.ActivityDetailMakananBinding
 
 class DetailMakananActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityDetailTopengBinding
+    private lateinit var binding: ActivityDetailMakananBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityDetailTopengBinding.inflate(layoutInflater)
+        binding = ActivityDetailMakananBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val apiService = ApiConfig.getApiService()
@@ -34,7 +34,7 @@ class DetailMakananActivity : AppCompatActivity() {
             finish()
         }
         showLoading(true)
-        viewModel.getDetailTopeng(id)
+        viewModel.getDetailMakanan(id)
         viewModel.detailMakanan.observe(this) { makanan ->
             setDetailMakanan(makanan)
             showLoading(false)

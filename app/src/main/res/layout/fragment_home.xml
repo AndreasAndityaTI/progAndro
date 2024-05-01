@@ -21,6 +21,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_cari_makanan"
         android:layout_width="match_parent"
@@ -73,7 +74,7 @@
                     android:id="@+id/iv_makanan"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/makanan_bali" />
+                    android:src="@drawable/makanan" />
             </androidx.cardview.widget.CardView>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
@@ -128,7 +129,7 @@
                     android:id="@+id/iv_pengrajin"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/pengrajin_makanan"
+                    android:src="@drawable/restoran"
                     android:scaleType="centerCrop"/>
             </androidx.cardview.widget.CardView>
         </androidx.constraintlayout.widget.ConstraintLayout>

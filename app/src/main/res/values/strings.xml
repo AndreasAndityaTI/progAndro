@@ -9,8 +9,8 @@
     <string name="scan_fragment">Scan Fragment</string>
     <string name="profile_fragment">Profile Fragment</string>
     <string name="greeting_home">Hai,\nMau cari tau tentang apa?</string>
-    <string name="cari_makanan">Cari\nTopeng</string>
-    <string name="cari_pengrajin">Cari\nPengrajin</string>
+    <string name="cari_makanan">Cari\nMakanan</string>
+    <string name="cari_pengrajin">Cari\nRestoran</string>
     <string name="scan">Scan</string>
     <string name="gambar_makanan">Gambar Topeng</string>
     <string name="nama_makanan">Bujuh</string>

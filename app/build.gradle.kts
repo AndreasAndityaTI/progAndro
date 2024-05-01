@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.storage.CacheResetOnProcessCanceled.enabled
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -8,6 +10,7 @@ plugins {
 android {
     namespace = "com.FastMenu.app"
     compileSdk = 34
+
 
     defaultConfig {
         applicationId = "com.FastMenu.app"
@@ -34,9 +37,12 @@ android {
     }
 
     buildFeatures{
-        viewBinding = true
-        buildConfig = true
+        buildConfig  =true
+        dataBinding  =true
+        viewBinding =true
     }
+
+
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8

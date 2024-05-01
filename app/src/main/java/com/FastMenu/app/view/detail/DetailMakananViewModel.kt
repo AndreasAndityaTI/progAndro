@@ -13,7 +13,7 @@ class DetailMakananViewModel (private val repository: MakananRepository) : ViewM
     private val _detailMakanan = MutableLiveData<DetailMakananResponse>()
     val detailMakanan: LiveData<DetailMakananResponse> =  MutableLiveData()
 
-    fun getDetailTopeng (id: String){
+    fun getDetailMakanan (id: String){
         viewModelScope.launch {
             val detailStory = repository.getDetailMakanan(id)
             _detailMakanan.postValue(detailStory)
