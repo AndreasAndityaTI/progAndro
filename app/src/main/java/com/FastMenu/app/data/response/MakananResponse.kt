@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 data class MakananResponse(
 
-	@field:SerializedName("topeng")
+	@field:SerializedName("makanan")
 	val makanan: List<MakananItem>,
 
 	@field:SerializedName("error")

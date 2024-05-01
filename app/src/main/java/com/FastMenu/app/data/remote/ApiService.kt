@@ -12,10 +12,10 @@ import retrofit2.http.Path
 
 interface ApiService {
 
-    @GET("topeng")
+    @GET("makanan")
     suspend fun getMakanan() : MakananResponse
 
-    @GET("topeng/{id}")
+    @GET("makanan/{id}")
     suspend fun getDetailMakanan(
         @Path("id") id: String
     ) : DetailMakananResponse

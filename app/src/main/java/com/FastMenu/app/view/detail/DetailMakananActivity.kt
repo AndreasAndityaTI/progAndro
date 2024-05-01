@@ -35,8 +35,8 @@ class DetailMakananActivity : AppCompatActivity() {
         }
         showLoading(true)
         viewModel.getDetailTopeng(id)
-        viewModel.detailMakanan.observe(this) { topeng ->
-            setDetailMakanan(topeng)
+        viewModel.detailMakanan.observe(this) { makanan ->
+            setDetailMakanan(makanan)
             showLoading(false)
         }
     }

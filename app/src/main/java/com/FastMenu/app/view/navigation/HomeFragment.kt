@@ -17,7 +17,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
-        val cardView = view.findViewById<CardView>(R.id.cv_cari_topeng)
+        val cardView = view.findViewById<CardView>(R.id.cv_cari_makanan)
         cardView.setOnClickListener {
             val intent = Intent(activity, SearchMakananActivity::class.java)
             startActivity(intent)

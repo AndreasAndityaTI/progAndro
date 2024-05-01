@@ -27,8 +27,8 @@ class SearchMakananViewModel(private val repository: MakananRepository) : ViewMo
         _isLoading.value = true
         viewModelScope.launch {
             try {
-                val topeng = repository.getMakanan().makanan
-                _listMakanan.postValue(topeng)
+                val makanan = repository.getMakanan().makanan
+                _listMakanan.postValue(makanan)
             } catch (e: Exception) {
                 Log.e("Error", e.message ?: "Unknown error occurred")
                 if (e.message == "timeout"){

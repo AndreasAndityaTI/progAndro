@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:navigationIcon="@drawable/arrow_circle_left"
-            app:title="Search Topeng" />
+            app:title="Search Makanan" />
 
     </com.google.android.material.appbar.AppBarLayout>
 

@@ -32,13 +32,13 @@
                 android:id="@+id/iv_item_photo"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:contentDescription="@string/gambar_topeng"
+                android:contentDescription="@string/gambar_makanan"
                 android:scaleType="centerCrop"
                 android:src="@drawable/baseline_image_24" />
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:id="@+id/tv_nama_topeng"
+            android:id="@+id/tv_nama_makanan"
             android:layout_width="0dp"
             android:layout_height="35dp"
             android:layout_marginStart="8dp"
@@ -53,7 +53,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tv_deskripsi_topeng"
+            android:id="@+id/tv_deskripsi_makanan"
             android:layout_width="225dp"
             android:layout_height="60dp"
             android:layout_marginStart="8dp"
@@ -66,7 +66,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/cv_photo"
-            app:layout_constraintTop_toBottomOf="@+id/tv_nama_topeng"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nama_makanan"
             app:layout_constraintVertical_bias="0.0" />
 
         <ImageView

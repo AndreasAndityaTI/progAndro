@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cv_cari_topeng"
+        android:id="@+id/cv_cari_makanan"
         android:layout_width="match_parent"
         android:layout_height="129dp"
         android:layout_marginStart="16dp"
@@ -41,13 +41,13 @@
             android:background="@color/primary">
 
             <TextView
-                android:id="@+id/tv_cari_topeng"
+                android:id="@+id/tv_cari_makanan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="34dp"
                 android:layout_marginEnd="200dp"
                 android:fontFamily="@font/poppins_semi_bold"
-                android:text="@string/cari_topeng"
+                android:text="@string/cari_makanan"
                 android:textColor="@color/white"
                 android:textSize="28sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -57,7 +57,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cv_topeng"
+                android:id="@+id/cv_makanan"
                 android:layout_width="128dp"
                 android:layout_height="117dp"
                 android:layout_marginEnd="8dp"
@@ -65,15 +65,15 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toEndOf="@+id/tv_cari_topeng"
+                app:layout_constraintStart_toEndOf="@+id/tv_cari_makanan"
                 app:layout_constraintTop_toTopOf="parent"
                 app:cardElevation="8dp">
 
                 <ImageView
-                    android:id="@+id/iv_topeng"
+                    android:id="@+id/iv_makanan"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/topeng_bali" />
+                    android:src="@drawable/makanan_bali" />
             </androidx.cardview.widget.CardView>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
@@ -89,7 +89,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cv_cari_topeng">
+        app:layout_constraintTop_toBottomOf="@+id/cv_cari_makanan">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -128,7 +128,7 @@
                     android:id="@+id/iv_pengrajin"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/pengrajin_topeng"
+                    android:src="@drawable/pengrajin_makanan"
                     android:scaleType="centerCrop"/>
             </androidx.cardview.widget.CardView>
         </androidx.constraintlayout.widget.ConstraintLayout>
